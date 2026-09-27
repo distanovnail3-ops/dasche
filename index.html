@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Даша, с годовщиной ♡</title>
+  <meta name="description" content="Один очень большой кот приготовил для тебя маленький сюрприз.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23f5b9cc'/%3E%3Cpath d='M16 25S3 17 5 10C7 4 14 6 16 10C18 6 25 4 27 10C29 17 16 25 16 25' fill='%238c3755'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="experience" aria-label="Сюрприз для Даши">
+    <div id="scene" role="img" aria-label="Большой объёмный серый Пушин"></div>
+    <header><span class="dedication">для моей Даши <b>♡</b></span><button id="sound" class="icon-button" aria-label="Выключить звук" aria-pressed="false" title="Звук">♫</button></header>
+    <section class="intro" id="intro"><p class="eyebrow">КОЕ-КТО ТЕБЯ ЖДАЛ</p><h1>Псс… Даша.</h1><p>Кажется, у этого кота что-то для тебя.</p></section>
+    <div id="greeting" aria-live="polite" aria-hidden="true"><span>ДАШАААА!</span><h2>С ГОДОВЩИНОООЙ<span class="heart">♡</span></h2></div>
+    <div id="bubble" role="status"></div>
+    <footer><div id="start-panel"><button class="primary" id="start">Подойти к Пушину <span>♡</span></button><p class="hint" id="hint">Со звуком будет ещё милее</p></div><div id="end-panel" hidden><p class="love">Мой любимый человек — это ты.</p><div id="photo-controls" class="photo-controls" role="group" aria-label="Фотографии" hidden><button id="photo-prev" aria-label="Предыдущая фотография">‹</button><div id="photo-dots" class="photo-dots"></div><span id="photo-count" class="photo-count" aria-live="polite">1 / 4</span><button id="photo-next" aria-label="Следующая фотография">›</button><button id="photo-pause" aria-label="Приостановить смену фотографий" aria-pressed="false">Ⅱ</button></div><button id="replay" class="replay">Ещё раз? ↻</button></div><span class="tiny">маленький сюрприз. большая любовь.</span></footer>
+    <button id="music-retry" class="primary retry" hidden>Включить нашу песню ♫</button>
+    <div id="error" hidden>Не удалось включить 3D. Попробуй открыть сайт в другом браузере.</div>
+  </main>
+  <noscript><p class="noscript">Включи JavaScript, чтобы Пушин мог показать сюрприз.</p></noscript>
+  <audio id="song" src="assets/song.mp3" preload="auto"></audio>
+  <script type="module" src="app.js"></script>
+</body></html>
